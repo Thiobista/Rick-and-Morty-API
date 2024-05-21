@@ -4,24 +4,16 @@
     <ShowDetails />
     <EpisodeList />
     <CharacterPage />
+    <LocationList />
   </div>
 </template>
 
-<script>
+<script setup>
 import Carousel from '../components/Carousel.vue';
 import ShowDetails from '../components/ShowDetails.vue';
 import EpisodeList from '../components/EpisodeList.vue';
 import CharacterPage from '../components/CharacterPage.vue';
-
-export default {
-  name: 'HomePage',
-  components: {
-    Carousel,
-    ShowDetails,
-    EpisodeList,
-    CharacterPage,
-  },
-};
+import LocationList from '../components/LocationList.vue';
 </script>
 
 <style scoped>

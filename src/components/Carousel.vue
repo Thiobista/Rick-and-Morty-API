@@ -28,11 +28,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const currentIndex = ref(0);
 const images = ref([
-  'https://th.bing.com/th/id/OIP.J1CGy00pPtR2c0V3jJcMAgHaK_?rs=1&pid=ImgDetMain/800x400/1',
+  'https://via.placeholder.com/800x400/1',
   'https://via.placeholder.com/800x400/2',
   'https://via.placeholder.com/800x400/3',
 ]);
@@ -47,10 +47,15 @@ const next = () => {
     currentIndex.value < images.value.length - 1 ? currentIndex.value + 1 : 0;
 };
 
+let interval;
 onMounted(() => {
-  setInterval(() => {
+  interval = setInterval(() => {
     next();
   }, 3000);
+});
+
+onUnmounted(() => {
+  clearInterval(interval);
 });
 </script>
 

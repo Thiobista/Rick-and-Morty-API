@@ -5,15 +5,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import EpisodeList from '../components/EpisodeList.vue';
-
-export default {
-  name: 'EpisodePage',
-  components: {
-    EpisodeList,
-  },
-};
 </script>
 
 <style scoped>
