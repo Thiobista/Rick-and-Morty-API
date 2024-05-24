@@ -1,17 +1,13 @@
+<!-- src/App.vue -->
 <template>
   <div id="app">
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>
 
 <script setup>
-import { defineComponent } from 'vue';
-
-defineComponent({
-  name: 'App',
-});
 </script>
 
 <style>
-/* Global styles */
+/* Add your global styles here */
 </style>
