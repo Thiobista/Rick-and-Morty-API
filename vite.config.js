@@ -1,19 +1,8 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import WindiCSS from 'vite-plugin-windicss'
-import autoprefixer from 'autoprefixer'
 
-// https://vitejs.dev/config/
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue'; // Import the Vue plugin
 export default defineConfig({
   plugins: [
-    vue(),
-    WindiCSS()
+    Vue(), // Use the Vue plugin
   ],
-  css: {
-    postcss: {
-      plugins: [
-        autoprefixer()
-      ]
-    }
-  }
-})
+});

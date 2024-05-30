@@ -1,5 +1,5 @@
  <template>
-  <div class="relative w-full h-64 overflow-hidden bg-gray-800 rounded-lg shadow-lg">
+   <div class="relative w-full h-64 overflow-hidden bg-gray-800 rounded-lg shadow-lg">
     <div
       class="flex transition-transform duration-700"
       :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -9,7 +9,7 @@
         :key="index"
         class="w-full flex-shrink-0 relative"
       >
-        <img :src="image.src" class="w-full h-64 object-cover rounded-lg" :alt="image.alt" />
+      <img :src="image.src" class="w-full h-64 object-cover rounded-lg" :alt="image.alt" />
         <div class="absolute bottom-4 left-4 text-white p-4 bg-black bg-opacity-50 rounded-lg">
           <h2 class="text-xl font-bold">{{ image.show.title }}</h2>
           <p>Genre: {{ image.show.genre }}</p>

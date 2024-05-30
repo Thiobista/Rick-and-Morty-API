@@ -17,7 +17,7 @@ onMounted(async () => {
     const response = await axios.get('https://rickandmortyapi.com/api/location');
     locations.value = response.data.results.map(location => ({
       ...location,
-      image: `https://rickandmortyapi.com/api/character/avatar/${Math.floor(Math.random() * 826) + 1}.jpeg`
+      image: `https://rickandmortyapi.com/api/character/avatar/${Math.floor(Math.random() * 826) + 1}.jpeg` // Use character images as placeholders
     }));
   } catch (error) {
     console.error(error);
