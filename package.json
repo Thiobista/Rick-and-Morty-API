@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "cssesc": "^3.0.0",
     "vue": "^3.4.21",
     "vue-carousel": "^0.18.0",
     "vue-router": "^4.3.2"
