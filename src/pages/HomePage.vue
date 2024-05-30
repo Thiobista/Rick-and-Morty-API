@@ -64,8 +64,8 @@
     
   </div>
   <div class="flex justify-center mt-8">
-      <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">Figma</a>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">GitHub</a>
+      <a href="https://www.figma.com/design/MwY5XIe2IZJFH0TVO637bV/Untitled?node-id=0-1&t=uUsQCUSKgMunEJtJ-1" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">Figma</a>
+      <a href="https://github.com/Thiobista/Rick-and-Morty-API.git" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">GitHub</a>
     </div>
 </template>
 

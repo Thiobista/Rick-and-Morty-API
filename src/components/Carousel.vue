@@ -53,7 +53,7 @@ const images = ref([
     alt: 'Rick and Morty',
     description: 'Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but easily influenced grandson Morty Smith, who split their time between domestic life and interdimensional adventures.',
     show: {
-      title: 'Rick and Morty',
+      title: 'Rick and Morty1',
       genre: 'Animated, Sci-Fi, Comedy',
       creators: 'Dan Harmon, Justin Roiland',
       stars: 'Justin Roiland, Chris Parnell, Spencer Grammer',
@@ -62,7 +62,7 @@ const images = ref([
   },
   {
     src: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-    alt: 'Rick and Morty',
+    alt: 'Rick and Morty2',
     description: 'Rick Sanchez is a genius scientist who has created a portal gun, allowing him to travel to different dimensions and planets. He often takes his grandson, Morty, on these adventures, despite Morty\'s reluctance.',
     show: {
       title: 'Rick and Morty',
@@ -77,7 +77,7 @@ const images = ref([
     alt: 'Rick and Morty',
     description: 'Morty Smith is a young, naive, and easily influenced teenager who often finds himself dragged into his grandfather Rick\'s interdimensional adventures. Despite the dangers, Morty remains loyal to Rick and learns valuable life lessons along the way.',
     show: {
-      title: 'Rick and Morty',
+      title: 'Rick and Morty3',
       genre: 'Animated, Sci-Fi, Comedy',
       creators: 'Dan Harmon, Justin Roiland',
       stars: 'Justin Roiland, Chris Parnell, Spencer Grammer',

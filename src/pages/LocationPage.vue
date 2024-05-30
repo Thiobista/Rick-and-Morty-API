@@ -4,8 +4,8 @@
     <LocationList :locations="locations" />
   </div>
   <div class="flex justify-center mt-8">
-      <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">Figma</a>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">GitHub</a>
+      <a href="https://www.figma.com/design/nQNUSmr9YEPTMWRaoY2eK2/Untitled?node-id=0-1&t=6DNc0ysR1Gf0Y0WR-1" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">Figma</a>
+      <a href="https://github.com/Thiobista/Rick-and-Morty-API.git" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">GitHub</a>
     </div>
 </template>
 
