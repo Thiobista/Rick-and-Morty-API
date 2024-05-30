@@ -1,8 +1,4 @@
-<<<<<<< HEAD
  <template>
-=======
-<template>
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
   <div class="relative w-full h-64 overflow-hidden bg-gray-800 rounded-lg shadow-lg">
     <div
       class="flex transition-transform duration-700"
@@ -15,19 +11,11 @@
       >
         <img :src="image.src" class="w-full h-64 object-cover rounded-lg" :alt="image.alt" />
         <div class="absolute bottom-4 left-4 text-white p-4 bg-black bg-opacity-50 rounded-lg">
-<<<<<<< HEAD
           <h2 class="text-xl font-bold">{{ image.show.title }}</h2>
           <p>Genre: {{ image.show.genre }}</p>
           <p>Creators: {{ image.show.creators }}</p>
           <p>Stars: {{ image.show.stars }}</p>
           <p>Rating: {{ image.show.rating }}</p>
-=======
-          <h2 class="text-xl font-bold">{{ show.title }}</h2>
-          <p>Genre: {{ show.genre }}</p>
-          <p>Creators: {{ show.creators }}</p>
-          <p>Stars: {{ show.stars }}</p>
-          <p>Rating: {{ show.rating }}</p>
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
           <p class="mt-2">{{ image.description }}</p>
           <div class="mt-2 flex space-x-2">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -61,7 +49,6 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const currentIndex = ref(0);
 const images = ref([
   {
-<<<<<<< HEAD
     src: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
     alt: 'Rick and Morty',
     description: 'Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but easily influenced grandson Morty Smith, who split their time between domestic life and interdimensional adventures.',
@@ -99,32 +86,6 @@ const images = ref([
   },
 ]);
 
-=======
-    src: 'https://via.placeholder.com/800x400/1',
-    alt: 'First image',
-    description: 'First image description or storyline here.',
-  },
-  {
-    src: 'https://via.placeholder.com/800x400/2',
-    alt: 'Second image',
-    description: 'Second image description or storyline here.',
-  },
-  {
-    src: 'https://via.placeholder.com/800x400/3',
-    alt: 'Third image',
-    description: 'Third image description or storyline here.',
-  },
-]);
-
-const show = ref({
-  title: 'Rick and Morty',
-  genre: 'Animated, Sci-Fi, Comedy',
-  creators: 'Dan Harmon, Justin Roiland',
-  stars: 'Justin Roiland, Chris Parnell, Spencer Grammer',
-  rating: '9.2/10',
-});
-
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
 const prev = () => {
   currentIndex.value =
     currentIndex.value > 0 ? currentIndex.value - 1 : images.value.length - 1;

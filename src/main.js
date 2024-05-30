@@ -25,8 +25,4 @@ app.use(router);
 //   console.error('Target node not found.');
 // }
 
-<<<<<<< HEAD
 app.mount('#app');
-=======
-app.mount('#app');
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e

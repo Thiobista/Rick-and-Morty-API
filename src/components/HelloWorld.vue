@@ -1,11 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-<<<<<<< HEAD
 defineProps({
-=======
-const { props } = defineProps({
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
   msg: String,
 })
 
@@ -13,11 +9,7 @@ const count = ref(0)
 </script>
 
 <template>
-<<<<<<< HEAD
   <h1>{{ msg }}</h1>
-=======
-  <h1>{{ props.msg }}</h1>
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>

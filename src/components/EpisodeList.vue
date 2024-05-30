@@ -7,15 +7,10 @@
         v-for="episode in episodes"
         :key="episode.id"
         :style="{ backgroundImage: `url(${episode.image})` }"
-<<<<<<< HEAD
-=======
-        @click="showEpisodeDetails(episode)"
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
       >
         <div class="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 group-hover:bg-opacity-70"></div>
         <div class="relative p-4 z-10 text-white">
           <h5 class="text-lg font-semibold">{{ episode.name }}</h5>
-<<<<<<< HEAD
           <p class="text-gray-200">Season: {{ episode.episode }}</p>
           <button 
             class="mt-4 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 focus:outline-none"
@@ -23,33 +18,11 @@
           >
             Details
           </button>
-=======
-          <p class="text-gray-300">Season: {{ episode.episode }}</p>
-          <div class="mt-2 flex space-x-3">
-            <button @click="likeEpisode(episode)" class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 hover:text-green-600" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2 10.5a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H3a1 1 0 01-1-1v-6zM8 7V3a1 1 0 011-1h3.5a1 1 0 011 1v4h1.618a1 1 0 01.957 1.29l-1.933 6.772A1 1 0 0113.213 14H9a1 1 0 01-1-1v-6H8zM6 3.5A1.5 1.5 0 004.5 2h-1A1.5 1.5 0 002 3.5v7A1.5 1.5 0 003.5 12h1A1.5 1.5 0 006 10.5v-7zM13 2h-2.5A.5.5 0 0010 2.5v7a.5.5 0 00.5.5H13v-6a1 1 0 00-1-1H9.5A.5.5 0 009 3V2.5a.5.5 0 01.5-.5H13z"/>
-              </svg>
-            </button>
-            <button @click="dislikeEpisode(episode)" class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 hover:text-red-600" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2 9.5a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H3a1 1 0 01-1-1v-6zM8 13v4a1 1 0 001 1h3.5a1 1 0 001-1v-4h1.618a1 1 0 00.957-1.29l-1.933-6.772A1 1 0 0013.213 6H9a1 1 0 00-1 1v6H8zM6 13.5A1.5 1.5 0 014.5 15h-1A1.5 1.5 0 012 13.5v-7A1.5 1.5 0 013.5 5h1A1.5 1.5 0 016 6.5v7zM13 16h-2.5A.5.5 0 0110 15.5v-7a.5.5 0 01.5-.5H13v6a1 1 0 011 1H9.5a.5.5 0 00-.5.5V16z"/>
-              </svg>
-            </button>
-            <button @click="favoriteEpisode(episode)"
-            class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 hover:text-yellow-600" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 3.287a1 1 0 011.902 0l.473 1.337a1 1 0 00.946.69h1.414a1 1 0 01.592 1.806l-1.14.833a1 1 0 00-.364 1.11l.432 1.287a1 1 0 01-1.536 1.11l-1.145-.87a1 1 0 00-1.202 0l-1.145.87a1 1 0 01-1.536-1.11l.432-1.287a1 1 0 00-.364-1.11l-1.14-.833a1 1 0 01.592-1.806h1.414a1 1 0 00.946-.69l.473-1.337z"/>
-              </svg>
-            </button>
-          </div>
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
         </div>
       </div>
     </div>
 
     <!-- Modal for episode details -->
-<<<<<<< HEAD
     <div v-if="selectedEpisode" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-end">
       <div class="episode-details-panel bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full h-full overflow-y-auto transition-transform transform translate-x-0">
         <button
@@ -77,36 +50,13 @@
             </div>
           </div>
         </div>
-=======
-    <div v-if="selectedEpisode" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-        <h5 class="text-xl font-bold mb-2">{{ selectedEpisode.name }}</h5>
-        <p><strong>Episode:</strong> {{ selectedEpisode.episode }}</p>
-        <p><strong>Air Date:</strong> {{ selectedEpisode.air_date }}</p>
-        <p><strong>Characters:</strong></p>
-        <ul class="list-disc pl-5">
-          <li v-for="character in selectedEpisode.characters" :key="character">
-            {{ character }}
-          </li>
-        </ul>
-        <button
-          class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
-          @click="selectedEpisode = null"
-        >
-          Close
-        </button>
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
       </div>
     </div>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import { ref } from 'vue';
-=======
-import { ref, onMounted } from 'vue';
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
 import axios from 'axios';
 
 export default {
@@ -115,7 +65,6 @@ export default {
     const episodes = ref([]);
     const selectedEpisode = ref(null);
 
-<<<<<<< HEAD
     const fetchEpisodes = () => {
       axios.get('https://rickandmortyapi.com/api/episode')
         .then(response => {
@@ -126,14 +75,6 @@ export default {
             air_date: episode.air_date,
             created: episode.created,
             image: `https://rickandmortyapi.com/api/character/avatar/${Math.floor(Math.random() * 826) + 1}.jpeg`
-=======
-    const fetchData = () => {
-      axios.get('https://rickandmortyapi.com/api/episode')
-        .then(response => {
-          episodes.value = response.data.results.map(episode => ({
-            ...episode,
-            image: `https://rickandmortyapi.com/api/character/avatar/${episode.id}.jpeg`
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
           }));
         })
         .catch(error => {
@@ -141,7 +82,6 @@ export default {
         });
     };
 
-<<<<<<< HEAD
     const fetchEpisodeDetails = (episodeId) => {
       axios.get(`https://rickandmortyapi.com/api/episode/${episodeId}`)
         .then(async response => {
@@ -178,38 +118,12 @@ export default {
     };
 
     fetchEpisodes();
-=======
-    const showEpisodeDetails = (episode) => {
-      selectedEpisode.value = episode;
-    };
-
-    const likeEpisode = (episode) => {
-      alert(`Liked episode: ${episode.name}`);
-    };
-
-    const dislikeEpisode = (episode) => {
-      alert(`Disliked episode: ${episode.name}`);
-    };
-
-    const favoriteEpisode = (episode) => {
-      alert(`Favorited episode: ${episode.name}`);
-    };
-
-    onMounted(fetchData);
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
 
     return {
       episodes,
       selectedEpisode,
-<<<<<<< HEAD
       fetchEpisodeDetails,
       handleImageError
-=======
-      showEpisodeDetails,
-      likeEpisode,
-      dislikeEpisode,
-      favoriteEpisode
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
     };
   }
 };
@@ -227,7 +141,6 @@ export default {
   justify-content: flex-end;
   padding: 16px;
 }
-<<<<<<< HEAD
 
 .episode-details-panel {
   transition: transform 0.3s ease-out;
@@ -240,6 +153,4 @@ export default {
 .episode-details-panel p {
   margin-bottom: 0.5rem;
 }
-=======
->>>>>>> dee538b95422687554e6f80e2f6bdfbb979c429e
 </style>
