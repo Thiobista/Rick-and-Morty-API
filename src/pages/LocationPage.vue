@@ -3,6 +3,10 @@
     <h1 class="text-4xl text-center my-5">Locations</h1>
     <LocationList :locations="locations" />
   </div>
+  <div class="flex justify-center mt-8">
+      <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">Figma</a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:underline mx-4">GitHub</a>
+    </div>
 </template>
 
 <script setup>
